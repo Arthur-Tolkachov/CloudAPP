@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/cloudAPP/static/css/main.3c393a97.chunk.css",
-    "main.js": "/cloudAPP/static/js/main.cb0cb0db.chunk.js",
-    "main.js.map": "/cloudAPP/static/js/main.cb0cb0db.chunk.js.map",
-    "runtime-main.js": "/cloudAPP/static/js/runtime-main.fe40c3c0.js",
-    "runtime-main.js.map": "/cloudAPP/static/js/runtime-main.fe40c3c0.js.map",
-    "static/js/2.193ddafa.chunk.js": "/cloudAPP/static/js/2.193ddafa.chunk.js",
-    "static/js/2.193ddafa.chunk.js.map": "/cloudAPP/static/js/2.193ddafa.chunk.js.map",
-    "static/js/3.e43df1de.chunk.js": "/cloudAPP/static/js/3.e43df1de.chunk.js",
-    "static/js/3.e43df1de.chunk.js.map": "/cloudAPP/static/js/3.e43df1de.chunk.js.map",
-    "index.html": "/cloudAPP/index.html",
-    "static/css/main.3c393a97.chunk.css.map": "/cloudAPP/static/css/main.3c393a97.chunk.css.map",
-    "static/js/2.193ddafa.chunk.js.LICENSE.txt": "/cloudAPP/static/js/2.193ddafa.chunk.js.LICENSE.txt",
-    "static/media/clear.396ebddd.jpg": "/cloudAPP/static/media/clear.396ebddd.jpg",
-    "static/media/cloud.d61cc57a.jpg": "/cloudAPP/static/media/cloud.d61cc57a.jpg",
-    "static/media/haze.b3f2c6c7.jpg": "/cloudAPP/static/media/haze.b3f2c6c7.jpg",
-    "static/media/rain.615edd1e.jpg": "/cloudAPP/static/media/rain.615edd1e.jpg",
-    "static/media/snow.939aeb64.jpg": "/cloudAPP/static/media/snow.939aeb64.jpg"
+    "main.css": "/CloudAPP/static/css/main.3c393a97.chunk.css",
+    "main.js": "/CloudAPP/static/js/main.63dc611c.chunk.js",
+    "main.js.map": "/CloudAPP/static/js/main.63dc611c.chunk.js.map",
+    "runtime-main.js": "/CloudAPP/static/js/runtime-main.7b5be8d0.js",
+    "runtime-main.js.map": "/CloudAPP/static/js/runtime-main.7b5be8d0.js.map",
+    "static/js/2.193ddafa.chunk.js": "/CloudAPP/static/js/2.193ddafa.chunk.js",
+    "static/js/2.193ddafa.chunk.js.map": "/CloudAPP/static/js/2.193ddafa.chunk.js.map",
+    "static/js/3.e43df1de.chunk.js": "/CloudAPP/static/js/3.e43df1de.chunk.js",
+    "static/js/3.e43df1de.chunk.js.map": "/CloudAPP/static/js/3.e43df1de.chunk.js.map",
+    "index.html": "/CloudAPP/index.html",
+    "static/css/main.3c393a97.chunk.css.map": "/CloudAPP/static/css/main.3c393a97.chunk.css.map",
+    "static/js/2.193ddafa.chunk.js.LICENSE.txt": "/CloudAPP/static/js/2.193ddafa.chunk.js.LICENSE.txt",
+    "static/media/clear.396ebddd.jpg": "/CloudAPP/static/media/clear.396ebddd.jpg",
+    "static/media/cloud.d61cc57a.jpg": "/CloudAPP/static/media/cloud.d61cc57a.jpg",
+    "static/media/haze.b3f2c6c7.jpg": "/CloudAPP/static/media/haze.b3f2c6c7.jpg",
+    "static/media/rain.615edd1e.jpg": "/CloudAPP/static/media/rain.615edd1e.jpg",
+    "static/media/snow.939aeb64.jpg": "/CloudAPP/static/media/snow.939aeb64.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fe40c3c0.js",
+    "static/js/runtime-main.7b5be8d0.js",
     "static/js/2.193ddafa.chunk.js",
     "static/css/main.3c393a97.chunk.css",
-    "static/js/main.cb0cb0db.chunk.js"
+    "static/js/main.63dc611c.chunk.js"
   ]
 }
