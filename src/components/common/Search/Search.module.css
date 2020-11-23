@@ -1,0 +1,54 @@
+.label {
+    position: relative;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    margin: 20px auto 0 auto;
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+}
+
+.input.errorStyle {
+    border-color: #f00;
+}
+
+.send {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 150px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    background: rgb(0,176,255) linear-gradient(0deg, rgba(0,176,255,1) 0%, rgba(0,176,255,1) 46%, rgba(198,237,255,1) 100%);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.send:hover {
+    opacity: .7;
+}
+
+.error {
+    color: #f00;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 12px;
+}
+.searchList {
+    position: absolute;
+    left: 0;
+    top: 37px;
+    right: 0;
+    background-color: #fff;
+    list-style: none;
+    border-radius: 0 0 0 15px;
+    max-height: 90px;
+    overflow-y: auto;
+    z-index: 1;
+}

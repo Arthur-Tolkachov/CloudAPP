@@ -1,0 +1,30 @@
+.app {
+    width: calc(100% - 40px);
+    margin: 20px;
+    padding: 20px;
+}
+
+.cardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.title {
+    background: rgb(0,176,255) linear-gradient(0deg, rgba(0,176,255,1) 0%, rgba(0,176,255,1) 46%, rgba(198,237,255,1) 100%);
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.footer {
+    background: rgb(0,176,255) linear-gradient(0deg, rgba(0,176,255,1) 0%, rgba(0,176,255,1) 46%, rgba(198,237,255,1) 100%);
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}

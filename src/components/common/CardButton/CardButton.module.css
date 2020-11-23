@@ -1,0 +1,25 @@
+.wrapper {
+    position: relative;
+    width: 20%;
+    height: 400px;
+}
+.btn {
+    width: 100%;
+    height: 400px;
+    display: block;
+    cursor: pointer;
+    border: none;
+    background-color: #ddd;
+    transition: all .3s ease;
+}
+.btn:hover {
+    background-color: #ccc;
+}
+.title {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+}

@@ -1,0 +1,27 @@
+.item {
+    padding: 5px 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.item:hover {
+    background-color: rgba(119, 213, 245, .2);
+}
+.item img {
+    margin-right: 10px;
+}
+.country {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #77d5f5;
+    color: #fff;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 10px;
+}
