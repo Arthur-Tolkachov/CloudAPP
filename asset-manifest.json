@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/CloudAPP/static/css/main.02d8acb7.chunk.css",
-    "main.js": "/CloudAPP/static/js/main.fd603f0a.chunk.js",
-    "main.js.map": "/CloudAPP/static/js/main.fd603f0a.chunk.js.map",
+    "main.js": "/CloudAPP/static/js/main.ad03cca0.chunk.js",
+    "main.js.map": "/CloudAPP/static/js/main.ad03cca0.chunk.js.map",
     "runtime-main.js": "/CloudAPP/static/js/runtime-main.c6604204.js",
     "runtime-main.js.map": "/CloudAPP/static/js/runtime-main.c6604204.js.map",
     "static/js/2.4ed41166.chunk.js": "/CloudAPP/static/js/2.4ed41166.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.c6604204.js",
     "static/js/2.4ed41166.chunk.js",
     "static/css/main.02d8acb7.chunk.css",
-    "static/js/main.fd603f0a.chunk.js"
+    "static/js/main.ad03cca0.chunk.js"
   ]
 }
