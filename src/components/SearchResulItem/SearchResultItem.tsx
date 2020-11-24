@@ -1,21 +1,17 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import s from "./SearchResultItem.module.css";
 
 
 type PropsType = {
     name: string
     country: string
-    onClick: (value:string) => void
+    id: number
+    onClick: (value:number) => void
 }
-const SearchResultItem:React.FC<PropsType> = ({name, country, onClick}) => {
-    const [value, setValue] = useState<string>("")
-
-    useEffect(() => {
-        setValue(name)
-    }, [name])
+const SearchResultItem:React.FC<PropsType> = ({name, country, id,onClick}) => {
 
     const handler = () => {
-        onClick(value)
+        onClick(id)
     }
 
     return (

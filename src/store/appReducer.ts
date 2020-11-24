@@ -1,6 +1,6 @@
 import {CommonStateType} from "./appReducerTypes";
 
-type ActionType = SetMessageType
+export type ActionType = SetMessageType
 const initialState:CommonStateType = {
     error: false,
     message: "",

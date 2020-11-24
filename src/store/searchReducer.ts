@@ -32,4 +32,5 @@ export const getSearchResult = (value:string) => (dispatch: Dispatch) => {
     })
 }
 
+
 export default searchReducer;

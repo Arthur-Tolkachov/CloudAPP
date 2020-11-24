@@ -10,6 +10,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import CachedIcon from '@material-ui/icons/Cached';
 import {SysType, WeatherType} from "../../store/weatherReducerTypes";
 import Button from "../common/Button/Button";
+import {NavLink} from "react-router-dom";
 
 
 type PropsType = {
@@ -19,6 +20,7 @@ type PropsType = {
     sys: SysType
     weather: WeatherType
     removeCard: (cardID: number) => void
+    refreshCard: (cardID: number) => void
 }
 
 const date = new Date()
@@ -26,7 +28,7 @@ const dd = date.getDate() < 10 ? `0${date.getDate()}` : `${date.getDate()}`
 const mm = date.getMonth() < 10 ? `0${date.getMonth()}` : `${date.getMonth()}`
 const yy = `${date.getFullYear()}`
 
-const Card: React.FC<PropsType> = ({name, id, temp, weather, sys, removeCard}) => {
+const Card: React.FC<PropsType> = ({name, id, temp, weather, sys, removeCard, refreshCard}) => {
     let weatherBg: string = clearImg
     switch (weather.main) {
         case "Snow":
@@ -47,26 +49,36 @@ const Card: React.FC<PropsType> = ({name, id, temp, weather, sys, removeCard}) =
         case "Mist":
             weatherBg = hazeImg
             break
+        case "Fog":
+            weatherBg = hazeImg
+            break
     }
 
     const onRemoveClick = () => {
         removeCard(id)
     }
 
+    const onRefreshClick = () => {
+        refreshCard(id)
+    }
+
+
     return (
-        <div className={s.card}>
-            <img className={s.bg} src={weatherBg} alt="weather"/>
-            <Title title={`${name} (${sys.country})`} className={s.title}><img style={{marginRight: "10px"}}
-                                                                               src={`https://openweathermap.org/images/flags/${sys.country.toLowerCase()}.png`}
-                                                                               alt=""/></Title>
-            <div className={s.info}>
-                <img className={s.icon} src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`} alt=""/>
-                <span className={s.date}>{`${dd}.${mm}.${yy}`}</span>
-                <span className={s.temp}>{`${Math.round(temp)}°C`}</span>
-                <span className={s.description}>{weather.description} in {name}</span>
-            </div>
+        <div className={s.wrapper}>
+            <NavLink to={`/main/${id}`} className={s.card}>
+                <img className={s.bg} src={weatherBg} alt="weather"/>
+                <Title title={`${name} (${sys.country})`} className={s.title}><img style={{marginRight: "10px"}}
+                                                                                   src={`https://openweathermap.org/images/flags/${sys.country.toLowerCase()}.png`}
+                                                                                   alt=""/></Title>
+                <div className={s.info}>
+                    <img className={s.icon} src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`} alt=""/>
+                    <span className={s.date}>{`${dd}.${mm}.${yy}`}</span>
+                    <span className={s.temp}>{`${Math.round(temp)}°C`}</span>
+                    <span className={s.description}>{weather.description} in {name}</span>
+                </div>
+            </NavLink>
             <div className={s.buttons}>
-                <button className={s.refresh}><CachedIcon style={{color: "#fff"}}/></button>
+                <button onClick={onRefreshClick} className={s.refresh}><CachedIcon style={{color: "#fff"}}/></button>
                 <Button onClick={onRemoveClick} className={s.remove}><CloseIcon style={{color: "#fff"}}/></Button>
             </div>
         </div>

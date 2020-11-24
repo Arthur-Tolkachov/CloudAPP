@@ -5,7 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppStateType} from "../../../store/store";
 import {SearchDataType} from "../../../store/searchReducerTypes";
 import {getSearchResult, resetSearchReducer} from "../../../store/searchReducer";
-import {getCity} from "../../../store/weatherReducer";
+import {getCity, getCityByID} from "../../../store/weatherReducer";
 import Button from "../Button/Button";
 
 type PropsType = {
@@ -35,9 +35,10 @@ const Search: React.FC<PropsType> = ({onClick}) => {
         searchData.length ? setShowSearchHelper(true) : setShowSearchHelper(false)
     }, [searchData])
 
-    const onSearchItemClick = (value: string) => {
-        setValue(value)
-        onClickHandler()
+    const onSearchItemClick = (cityID: number) => {
+        dispatch(getCityByID(cityID))
+        dispatch(resetSearchReducer())
+        onClick(false)
     }
 
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
@@ -65,6 +66,7 @@ const Search: React.FC<PropsType> = ({onClick}) => {
 
     const searchResult = searchData.length ? searchData.map((s) => <SearchResultItem key={s.id}
                                                                                      name={s.name}
+                                                                                     id={s.id}
                                                                                      country={s.sys.country}
                                                                                      onClick={onSearchItemClick}/>) : ""
 

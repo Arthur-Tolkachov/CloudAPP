@@ -4,13 +4,6 @@
     padding: 20px;
 }
 
-.cardsWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    overflow: hidden;
-}
-
 .title {
     background: rgb(0,176,255) linear-gradient(0deg, rgba(0,176,255,1) 0%, rgba(0,176,255,1) 46%, rgba(198,237,255,1) 100%);
     padding: 20px;
