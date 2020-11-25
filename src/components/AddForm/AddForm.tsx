@@ -20,7 +20,7 @@ const AddForm: React.FC<PropsType> = ({onSearchFinish}) => {
         <div className={s.wrapper}>
             <div className={s.mask} onClick={onCloseClick}></div>
             <div className={s.form}>
-                <Title title="Enter city"><LocationCityIcon style={{marginRight:"10px"}}/></Title>
+                <Title title="Enter the required location"><LocationCityIcon style={{marginRight:"10px"}}/></Title>
                 <Search onClick={onSearchFinish}/>
                 <Button className={s.close} onClick={onCloseClick}><CloseIcon style={{color: "#000"}}/></Button>
             </div>
